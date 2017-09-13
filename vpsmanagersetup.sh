@@ -78,51 +78,51 @@ if [ -f "/usr/sbin/ufw" ] ; then
 fi
 if [ -d "/etc/squid3/" ]
 then
-	wget http://phreaker56.wap.sh/vpsmanager/squid1.txt -O /tmp/sqd1
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/squid1.txt -O /tmp/sqd1
 	echo "acl url3 dstdomain -i $ipdovps" > /tmp/sqd2
-	wget http://phreaker56.wap.sh/vpsmanager/squid2.txt -O /tmp/sqd3
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/squid2.txt -O /tmp/sqd3
 	cat /tmp/sqd1 /tmp/sqd2 /tmp/sqd3 > /etc/squid3/squid.conf
-	wget http://phreaker56.wap.sh/vpsmanager/payload.txt -O /etc/squid3/payload.txt
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/payload.txt -O /etc/squid3/payload.txt
 	echo " " >> /etc/squid3/payload.txt
 	grep -v "^Port 443" /etc/ssh/sshd_config > /tmp/ssh && mv /tmp/ssh /etc/ssh/sshd_config
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/addhost.sh -O /bin/addhost
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/delhost.sh -O /bin/delhost
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/remover.sh -O /bin/remover
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
 	chmod +x /bin/badvpnsetup
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
 	chmod +x /bin/tcptweaker
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
 	chmod +x /bin/userbackup
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
 	chmod +x /bin/otimizar
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
 	chmod +x /bin/speedtest
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
 	chmod +x /bin/detalhes
 	if [ ! -f "/etc/init.d/squid3" ]
 	then
@@ -139,51 +139,51 @@ then
 fi
 if [ -d "/etc/squid/" ]
 then
-	wget http://phreaker56.wap.sh/vpsmanager/squid1.txt -O /tmp/sqd1
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/squid1.txt -O /tmp/sqd1
 	echo "acl url3 dstdomain -i $ipdovps" > /tmp/sqd2
-	wget http://phreaker56.wap.sh/vpsmanager/squid.txt -O /tmp/sqd3
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/squid.txt -O /tmp/sqd3
 	cat /tmp/sqd1 /tmp/sqd2 /tmp/sqd3 > /etc/squid/squid.conf
-	wget http://phreaker56.wap.sh/vpsmanager/payload.txt -O /etc/squid/payload.txt
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/payload.txt -O /etc/squid/payload.txt
 	echo " " >> /etc/squid/payload.txt
 	grep -v "^Port 443" /etc/ssh/sshd_config > /tmp/ssh && mv /tmp/ssh /etc/ssh/sshd_config
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/2/addhost.sh -O /bin/addhost
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/2/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/2/delhost.sh -O /bin/delhost
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/2/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
 	chmod +x /bin/mudardata
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/remover.sh -O /bin/remover
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/remover.sh -O /bin/remover
 	chmod +x /bin/remover
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	wget http://phreaker56.wap.sh/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
+	wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
 	chmod +x /bin/badvpnsetup
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
 	chmod +x /bin/tcptweaker
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
 	chmod +x /bin/userbackup
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
 	chmod +x /bin/otimizar
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
 	chmod +x /bin/speedtest
-    wget http://phreaker56.wap.sh/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
+    wget https://github.com/fabiokim/phvpsmanager/blob/master/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
 	chmod +x /bin/detalhes
 	if [ ! -f "/etc/init.d/squid" ]
 	then
