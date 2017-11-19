@@ -106,8 +106,8 @@ then
 	chmod +x /bin/7
 	wget hhttps://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarlimite.sh -O /bin/3
 	chmod +x /bin/3
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
-	chmod +x /bin/ajuda
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/ajuda.sh -O /bin/adm
+	chmod +x /bin/adm
 	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/8
 	chmod +x /bin/8
     wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/16
@@ -167,8 +167,8 @@ then
 	chmod +x /bin/7
 	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarlimite.sh -O /bin/3
 	chmod +x /bin/3
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
-	chmod +x /bin/ajuda
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/ajuda.sh -O /bin/adm
+	chmod +x /bin/adm
 	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/8
 	chmod +x /bin/8
     wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/16
