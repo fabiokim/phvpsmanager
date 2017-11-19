@@ -88,42 +88,42 @@ then
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/addhost.sh -O /bin/addhost
-	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
-	chmod +x /bin/alterarsenha
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
-	chmod +x /bin/criarusuario
-	wget https://github.com/fabiokim/phvpsmanager/blame/master/vpsmanager/scripts/delhost.sh -O /bin/delhost
-	chmod +x /bin/delhost
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
-	chmod +x /bin/expcleaner
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
-	chmod +x /bin/mudardata
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/remover.sh -O /bin/remover
-	chmod +x /bin/remover
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
-	chmod +x /bin/sshlimiter
-	wget hhttps://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
-	chmod +x /bin/alterarlimite
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/addhost.sh -O /bin/14
+	chmod +x /bin/14
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarsenha.sh -O /bin/2
+	chmod +x /bin/2
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/criarusuario2.sh -O /bin/1
+	chmod +x /bin/1
+	wget https://github.com/fabiokim/phvpsmanager/blame/master/vpsmanager/scripts/delhost.sh -O /bin/15
+	chmod +x /bin/15
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/expcleaner2.sh -O /bin/6
+	chmod +x /bin/6
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/mudardata.sh -O /bin/4
+	chmod +x /bin/4
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/remover.sh -O /bin/5
+	chmod +x /bin/5
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshlimiter2.sh -O /bin/7
+	chmod +x /bin/7
+	wget hhttps://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarlimite.sh -O /bin/3
+	chmod +x /bin/3
 	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
-	chmod +x /bin/sshmonitor
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
-	chmod +x /bin/badvpnsetup
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
-	chmod +x /bin/tcptweaker
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
-	chmod +x /bin/userbackup
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
-	chmod +x /bin/openvpnsetup
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
-	chmod +x /bin/otimizar
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
-	chmod +x /bin/speedtest
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
-	chmod +x /bin/detalhes
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/8
+	chmod +x /bin/8
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/16
+	chmod +x /bin/16
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/tcptweaker.sh -O /bin/17
+	chmod +x /bin/17
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/userbackup.sh -O /bin/12
+	chmod +x /bin/12
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/openvpnsetup.sh -O /bin/9
+	chmod +x /bin/9
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/otimizar.sh -O /bin/10
+	chmod +x /bin/10
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/speedtest.sh -O /bin/11
+	chmod +x /bin/11
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/detalhes.sh -O /bin/13
+	chmod +x /bin/13
 	if [ ! -f "/etc/init.d/squid3" ]
 	then
 		service squid3 reload > /dev/null
@@ -149,42 +149,42 @@ then
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/addhost.sh -O /bin/addhost
-	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarsenha.sh -O /bin/alterarsenha
-	chmod +x /bin/alterarsenha
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/criarusuario2.sh -O /bin/criarusuario
-	chmod +x /bin/criarusuario
-	wget https://github.com/fabiokim/phvpsmanager/blame/master/vpsmanager/scripts/delhost.sh -O /bin/delhost
-	chmod +x /bin/delhost
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/expcleaner2.sh -O /bin/expcleaner
-	chmod +x /bin/expcleaner
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/mudardata.sh -O /bin/mudardata
-	chmod +x /bin/mudardata
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/remover.sh -O /bin/remover
-	chmod +x /bin/remover
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshlimiter2.sh -O /bin/sshlimiter
-	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarlimite.sh -O /bin/alterarlimite
-	chmod +x /bin/alterarlimite
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/addhost.sh -O /bin/14
+	chmod +x /bin/14
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarsenha.sh -O /bin/2
+	chmod +x /bin/2
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/criarusuario2.sh -O /bin/1
+	chmod +x /bin/1
+	wget https://github.com/fabiokim/phvpsmanager/blame/master/vpsmanager/scripts/delhost.sh -O /bin/15
+	chmod +x /bin/15
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/expcleaner2.sh -O /bin/6
+	chmod +x /bin/6
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/mudardata.sh -O /bin/4
+	chmod +x /bin/4
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/remover.sh -O /bin/5
+	chmod +x /bin/5
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshlimiter2.sh -O /bin/7
+	chmod +x /bin/7
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/alterarlimite.sh -O /bin/3
+	chmod +x /bin/3
 	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
-	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/sshmonitor
-	chmod +x /bin/sshmonitor
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/badvpnsetup
-	chmod +x /bin/badvpnsetup
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/tcptweaker.sh -O /bin/tcptweaker
-	chmod +x /bin/tcptweaker
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/userbackup.sh -O /bin/userbackup
-	chmod +x /bin/userbackup
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/openvpnsetup.sh -O /bin/openvpnsetup
-	chmod +x /bin/openvpnsetup
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/otimizar.sh -O /bin/otimizar
-	chmod +x /bin/otimizar
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/speedtest.sh -O /bin/speedtest
-	chmod +x /bin/speedtest
-    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/detalhes.sh -O /bin/detalhes
-	chmod +x /bin/detalhes
+	wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/sshmonitor2.sh -O /bin/8
+	chmod +x /bin/8
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/badvpnsetup.sh -O /bin/16
+	chmod +x /bin/16
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/tcptweaker.sh -O /bin/17
+	chmod +x /bin/17
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/userbackup.sh -O /bin/12
+	chmod +x /bin/12
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/openvpnsetup.sh -O /bin/9
+	chmod +x /bin/9
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/otimizar.sh -O /bin/10
+	chmod +x /bin/10
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/speedtest.sh -O /bin/11
+	chmod +x /bin/11
+    wget https://raw.githubusercontent.com/fabiokim/phvpsmanager/master/vpsmanager/scripts/detalhes.sh -O /bin/13
+	chmod +x /bin/13
 	if [ ! -f "/etc/init.d/squid" ]
 	then
 		service squid reload > /dev/null
